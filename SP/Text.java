@@ -1,12 +1,11 @@
 package SPlab;
 
-public class Table implements Element {
-	String tableName;
+public class Text implements Element {
+	String text;
 	
-	Table(String tableName){
-		this.tableName=tableName;
+	Text(String text){
+		this.text=text;
 	}
-	
 	public void add(Element elem) {
 	}
 	public void remove(Element elem) {
@@ -18,7 +17,7 @@ public class Table implements Element {
 		v.visit(this);
 	}
 	public void print() {
-		System.out.println("--TableName--");
-		System.out.println(tableName);
+		System.out.println("--Paragraph--");
+		System.out.println(text);
 	}
 }

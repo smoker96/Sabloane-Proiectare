@@ -1,12 +1,9 @@
+package SPlab;
 
-public class Author{
-String nume;
-public Author(String nume) {
-	this.nume = nume;
-}
-public void print() {
-	// TODO Auto-generated method stub
-	System.out.println(nume);
-}
-
+public class Author {
+	String name;
+	
+	Author(String name){
+		this.name=name;
+	}
 }

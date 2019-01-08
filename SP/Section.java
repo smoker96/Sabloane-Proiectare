@@ -1,25 +1,37 @@
-import java.util.ArrayList;
-import java.util.List;
+package SPlab;
 
-public class Section implements Element{
-String title;
-List<Element>e=new ArrayList<>();
-public Section(String title) {
-	this.title = title;
-}
-public void add(Paragraph paragraph) {
-	// TODO Auto-generated method stub
-	e.add(paragraph);
-}
-public void add(Element cap11) {
-	// TODO Auto-generated method stub
-	e.add(cap11);
-}
-public void print() {
-	System.out.println(title);
-	for(Element ele:e)
-	{
-		ele.print();
+import java.util.ArrayList;
+
+public class Section implements Element {
+	String title;
+	ArrayList<Element> elements=new ArrayList<Element>();
+	Section(String title){
+		this.title=title;
 	}
-}
+	
+	public void add(Element elem) {
+		elements.add(elem);
+	}
+	public void remove(Element elem) {
+		elements.remove(elem);
+	}
+	public int getChild(Element elem) {
+		return elements.indexOf(elem);
+	}
+	public void accept(Visitor v) {
+		for(int e=0;e<elements.size();e++)
+		{
+			elements.get(e).accept(v);;
+		}
+	}
+	public void print() {
+		System.out.println("--SectionTitle--");
+		System.out.println(title);
+		System.out.println("--Elements--");
+		for(int e=0;e<elements.size();e++)
+		{
+			elements.get(e).print();
+		}
+	}
+
 }

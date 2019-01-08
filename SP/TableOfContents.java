@@ -1,4 +1,4 @@
-package SPlab;
+package src;
 
 public class TableOfContents {
 

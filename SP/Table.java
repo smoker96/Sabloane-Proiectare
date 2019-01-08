@@ -1,7 +1,7 @@
-package SPlab;
+package src;
 
 public class Table {
-	String tableName;
+String tableName;
 	
 	Table(String tableName){
 		this.tableName=tableName;

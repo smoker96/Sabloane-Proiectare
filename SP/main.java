@@ -1,7 +1,6 @@
-package SPlab;
+package src;
 
-public class SPlab {
-
+public class main {
 	public static void main(String[] args) {
 		Book discoTitanic = new Book("Disco Titanic");
 		Author rpGheo = new Author("Radu Pavel Gheo");
@@ -22,5 +21,5 @@ public class SPlab {
 		
 		discoTitanic.print();
 	}
-
+	
 }

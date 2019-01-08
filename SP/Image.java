@@ -1,7 +1,7 @@
-package SPlab;
+package src;
 
 public class Image {
-	String imgName;
+String imgName;
 	
 	Image(String imgName){
 		this.imgName=imgName;

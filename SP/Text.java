@@ -1,7 +1,7 @@
-package SPlab;
+package src;
 
 public class Text {
-	String text;
+String text;
 	
 	Text(String text){
 		this.text=text;

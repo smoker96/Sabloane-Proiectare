@@ -1,4 +1,4 @@
-package SPlab;
+package src;
 
 import java.util.ArrayList;
 
@@ -18,6 +18,5 @@ public class Chapter {
 	public SubChapter getSubChapter(int indexSubChapterOneOne) {
 		return subChapters.get(indexSubChapterOneOne);
 	}
-	
-	
+
 }

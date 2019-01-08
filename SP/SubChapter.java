@@ -1,4 +1,4 @@
-package SPlab;
+package src;
 
 import java.util.ArrayList;
 
@@ -24,5 +24,5 @@ public class SubChapter {
 		Table table = new Table(tableName);
 		tables.add(table);
 	}
-	
+
 }
